@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    margin-bottom: 20px;
+}
+
+#clear-favorites {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e63946;
+    color: white;
+    cursor: pointer;
+}
+
+#clear-favorites:hover {
+    background-color: #c1121f;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.movie-card {
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.movie-card.favorite {
+    border-color: gold;
+    background-color: #fffbea;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 15px;
+}
+
+.movie-info h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.movie-info p {
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.favorite-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 10px;
+    border: 2px solid #222;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.movie-card.favorite .favorite-btn {
+    background-color: gold;
+    border-color: gold;
+    font-weight: bold;
+}
+
+.favorite-btn:hover {
+    background-color: #eee;
+}
